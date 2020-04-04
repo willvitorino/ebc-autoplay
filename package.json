@@ -2,7 +2,7 @@
   "name": "voz-do-brasil-autoplay",
   "productName": "voz-do-brasil-autoplay",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Player automatico da programação da EBC",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -35,11 +35,12 @@
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
+          "config": {
+            "options": {
+              "maintainer": "William Vitorino",
+              "homepage": "https://github.com/belshoff"
+            }
+          }
         }
       ]
     }

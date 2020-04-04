@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Voz do Brasil</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap" rel="stylesheet" />
+
+  <link href="./assets/css/video-js.css" rel="stylesheet">
+  <script src="./assets/js/video.js"></script>
+  <script src="./assets/js/videojs-contrib-hls.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+</head>
+<body>
+  <main class="container-fluid bg-primary ">
+    <section id="player-container">
+      <video style="display: none;" id="transmissao" autoplay class="video-js vjs-fluid vjs-default-skin" controls preload="auto" data-setup='{"liveui": true, "controlBar": { "fullscreenToggle": hidden }}'>
+        <source src="https://22722d.ha.azioncdn.net/hls-radio/STsEBCRNFM/index.m3u8" type="application/x-mpegURL">
+      </video>
+    </section>
+
+    <div class="flex-container flex-row">
+      <div class="title item">
+        Voz do brasil
+      </div>
+
+      <div class="controllers item">
+        <button type="button" class="btn btn-outline-light" onclick="pause()" >
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pause" class="svg-inline--fa fa-pause fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z"></path></svg>
+        </button>
+        <button type="button" class="btn btn-outline-light" onclick="play()" >
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" class="svg-inline--fa fa-play fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>
+        </button>
+      </div>
+
+    </div>
+  </main>
+  <footer class="bg-dark">
+      Desenvolvido por: <a target="_blank" href="https://github.com/belshoff">
+        William Vitorino
+      </a>
+  </footer>
+
+  <script src="./player.js" ></script>
+</body>
 </html>
