@@ -1,5 +1,4 @@
-# voz-do-brasil-autoplay
-
+# EBC Player
 Programa feito em Electron com HTML, CSS e JavaScript puro.
 
 ![Screenshot](https://github.com/belshoff/voz-do-brasil-autoplay/raw/master/src/assets/screenshot.png "Screenshot")
