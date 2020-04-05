@@ -1,6 +1,6 @@
 {
-  "name": "voz-do-brasil-autoplay",
-  "productName": "voz-do-brasil-autoplay",
+  "name": "ebc-autoplay",
+  "productName": "EBC-Autoplay",
   "version": "1.0.0",
   "description": "Player automatico da programação da EBC",
   "main": "src/index.js",
@@ -16,6 +16,10 @@
     "name": "William Vitorino",
     "email": "williamvitorino3@gmail.com"
   },
+  "build": {
+    "productName": "ebc-player",
+    "copyright": "Copyright © 2020 William Vitorino"
+  },
   "license": "MIT",
   "config": {
     "forge": {
@@ -24,7 +28,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "voz_do_brasil_autoplay"
+            "name": "ebc_autoplay"
           }
         },
         {
