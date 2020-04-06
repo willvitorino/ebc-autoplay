@@ -1,7 +1,7 @@
 {
   "name": "ebc-autoplay",
   "productName": "EBC-Autoplay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Player automatico da programação da EBC",
   "main": "src/index.js",
   "scripts": {
